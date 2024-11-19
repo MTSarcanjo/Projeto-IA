@@ -1,0 +1,109 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/CircleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/WoodenBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.45971815051648346 0.6777365533708954 0.5738748873322855 1.7372276688670716
+  position -0.16564545721167767 -0.390833957274886 1.9113917968326954
+}
+Background {
+  skyColor [
+    0.4 0.7 1
+  ]
+}
+DirectionalLight {
+  ambientIntensity 1
+  direction 0.1 -0.5 0.3
+}
+CircleArena {
+  radius 0.5
+  floorAppearance Parquetry {
+    type "chequered"
+    colorOverride 0.9 1 0.8
+  }
+  floorTileSize 0.25 0.25
+}
+DEF caixaLeve WoodenBox {
+  translation 0.0291681 0.317967 0.0499922
+  rotation 2.7821359026342486e-08 9.486544039482122e-09 0.9999999999999997 0.33269330874035125
+  size 0.1 0.1 0.1
+  mass 0.02
+}
+WoodenBox {
+  translation -0.29859084550504356 -0.3204610138865309 0.04960857526064253
+  rotation -0.00021041179248073612 0.001306614378680447 0.9999991242424879 1.0800817108181184
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+WoodenBox {
+  translation -0.07790506651028292 -0.430137497406696 0.0496076
+  rotation -1.3097597955558473e-17 2.1975153002523507e-17 1 1.2262734491784335
+  name "wooden box(7)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+WoodenBox {
+  translation -0.3188019366514838 0.01053233746893829 0.04960760110651814
+  rotation 6.440753577744506e-09 4.559994051571201e-09 1 1.9475908601882592
+  name "wooden box(3)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+WoodenBox {
+  translation -0.30597260334997484 0.2852726589718216 0.04960760131029729
+  rotation -7.132453328377836e-09 8.14486925718694e-09 0.9999999999999999 0.8045535279980994
+  name "wooden box(6)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+WoodenBox {
+  translation 0.23805564798536516 -0.26578095667369706 0.04963946930464665
+  rotation -5.417506733722938e-05 0.00022306845002297338 0.9999999736527639 1.1396344891555268
+  name "wooden box(4)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+WoodenBox {
+  translation -0.12650692041757536 0.13692090987003636 0.049607600832257875
+  rotation -2.7021410902976796e-08 8.012804408890034e-09 0.9999999999999997 0.7611792835804727
+  name "wooden box(9)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+WoodenBox {
+  translation -0.03206047379520775 -0.1393902511724582 0.04960520810082492
+  rotation -0.000266910534154671 -0.00017696983327643195 0.9999999487202212 1.1504602009125722
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+WoodenBox {
+  translation 0.3984098252787557 -0.08617524887850034 0.049607600708314895
+  rotation 1.6165704019567148e-08 -9.325735138343216e-09 0.9999999999999998 1.1401277314265779
+  name "wooden box(8)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+WoodenBox {
+  translation 0.23464031929557724 0.10993114049865595 0.049636813575191126
+  rotation 5.012696594703505e-05 0.0001585302220716033 0.9999999861777279 1.1399193804928645
+  name "wooden box(5)"
+  size 0.1 0.1 0.1
+  mass 1
+}
+E-puck {
+  hidden position_0_0 457.4422676273494
+  hidden position_0_1 611.6851185555777
+  hidden rotation_1 0 1 0 5.052925510419168
+  hidden rotation_2 0 -1 0 4.067041548021801
+  translation 0.128491 0.145132 -6.40035e-05
+  rotation -0.0003782613495934329 -0.00014983366420622562 0.9999999172341087 -2.3876633475481777
+  controller "my_controller"
+  supervisor TRUE
+}
